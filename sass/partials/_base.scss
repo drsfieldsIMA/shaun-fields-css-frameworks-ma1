@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #E5E5E5;
+    margin: 0;
+    font-family: $font-primary;
+}
+
+.wrapper {
+    width:100%;
+    flex: 1 0 auto;
+}
+
+.container {
+    max-width: 94%!important;
+    margin: 0 auto;
+    flex: 1 0 auto;
+
+    &__heading{
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+    }
+    
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,64 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%!important;
+    margin-left: 0;
+    justify-content: space-between;
+    align-items: center;
+     
+    &__item {
+        width: 260px;
+        height: 237px;
+        margin: 14px auto;
+        border: none;
+    }
+    @media (min-width: 768px){
+    &__item {
+        height: 240px;
+    }
+}
+}
+
+.product {
+    background: white;
+    padding: 0.2em 1em 3.5em 1em;
+    position: relative;
+    @include button-border(15px);
+    color: getColour(secondary);
+    font-size: 15px;
+    
+    // add in some interactivity at large screen sizes
+    @media (min-width: 768px){
+    &:hover {
+        background: lighten(getColour(secondary), 36);
+        color: white;
+        cursor: pointer;
+    }
+    }
+
+    &__title, &__description{
+        color: getColour(dark-grey);
+        text-align: justify;
+    }
+    
+    &__title{
+    font-size: 18px;
+    text-align: center;
+    }
+    &--special{
+        border: 3px solid getColour(secondary); 
+    }
+    
+    &--sold-out{
+        background: getColour(secondary);
+  
+        h4, p{
+            color: white;         
+        }
+    }
+
+    &--sold-out::before {
+        background:  getColour(secondary);
+        
+    }
+}

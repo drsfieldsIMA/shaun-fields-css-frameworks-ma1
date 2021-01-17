@@ -1,0 +1,5 @@
+// create a border around the button
+@mixin button-border($radius) {
+    border-radius: $radius;
+    border: 3px solid white;
+}

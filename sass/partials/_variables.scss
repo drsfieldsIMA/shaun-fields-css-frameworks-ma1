@@ -1,0 +1,20 @@
+$font-primary: "open sans", sans-serif;
+$font-headings: "montserrat", sans-serif;
+$nav-headings: "Archivo", sans-serif;
+
+$tablet-width: 992px;
+
+$colours: (
+    primary: #779fa1,
+    secondary: #C32C72,
+    accent: #88498f,
+    light-grey: #efefef,
+    beige: #e0cba8,
+    dark-grey:#463F3A,
+    nav-grey:#8D8D8D,
+    logo-dark:#262626,
+);
+
+@function getColour($colour) {
+    @return map-get($colours, $colour);
+}

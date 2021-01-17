@@ -1,0 +1,24 @@
+footer {
+    background: getColour(light-grey);
+    flex-shrink: 0;
+    color: getColour(nav-grey);
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: $tablet-width){
+    margin-top: 1rem;   
+    }
+
+    a {
+        color: getColour(nav-grey);
+        text-decoration: none;
+
+        a:hover {
+            color: getColour(primary);
+        }
+    }
+}
